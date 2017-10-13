@@ -1,0 +1,226 @@
+{
+	"config": {
+		"logo_header": "/images/logo-header.png",
+		"logo_footer": "/images/logo-footer.png",
+		"endereco": "Rua Caetano Alberti, 118 Jd. • Rio 400 - CEP: 19053-230 Presidente Prudente – SP •",
+		"email": "comercial@apremier.com.br",
+		"telefone": "(18) 3221-2655",
+		"latitude": "-22.147623",
+		"longitude": "-51.4004254",
+		"map_marker": "/images/mark.png",
+		"redes_sociais": [
+			{
+				"id": 1,
+				"nome": "instagram",
+				"link": "#"
+			},
+			{
+				"id": 2,
+				"nome": "whatsapp",
+				"link": "#"
+			},
+			{
+				"id": 3,
+				"nome": "facebook",
+				"link": "#"
+			}
+		]
+	},
+	"home": {
+		"banners": [
+			{
+				"id": 1,
+				"imagem": "/images/banner1.jpg"
+			},
+			{
+				"id": 2,
+				"imagem": "/images/banner1.jpg"
+			},
+			{
+				"id": 3,
+				"imagem": "/images/banner1.jpg"
+			}
+		],
+		"titulo_texto_sobre": "<h3>O QUE FAZEMOS</h3>",
+		"texto_sobre": "<p class=\"text-center\">Não oferecemos somente embalagens personalizadas, mas também a satisfação para nossos clientes.</p>",
+		"produtos": [
+			{
+				"id": 1,
+				"link": "#sacolas",
+				"imagem": "/images/sacolas.jpg"
+			},
+			{
+				"id": 2,
+				"link": "#caixas",
+				"imagem": "/images/caixas.jpg"
+			},
+			{
+				"id": 3,
+				"link": "#embalagens",
+				"imagem": "/images/embalagens.jpg"
+			},
+			{
+				"id": 4,
+				"link": "#monte-sua-embalagem",
+				"imagem": "/images/monte-sua-embalagem.jpg"
+			}
+		],
+		"titulo_texto_portfolio": "<h3>PORTFÓLIO</h3>",
+		"texto_portfolio": "<p>Criatividade e qualidade fazem parte da nossa história, ao passar dos anos levamos esse conceito para cada um de nossos clientes.</p>",
+		"portfolio": [
+			{
+				"id": 1,
+				"full": "/images/portfolio_img1.jpg",
+				"thumb": "/images/thumb1.jpg"
+			},
+			{
+				"id": 2,
+				"full": "/images/portfolio_img1.jpg",
+				"thumb": "/images/thumb2.jpg"
+			},
+			{
+				"id": 3,
+				"full": "/images/portfolio_img1.jpg",
+				"thumb": "/images/thumb3.jpg"
+			},
+			{
+				"id": 4,
+				"full": "/images/portfolio_img1.jpg",
+				"thumb": "/images/thumb4.jpg"
+			},
+			{
+				"id": 5,
+				"full": "/images/portfolio_img1.jpg",
+				"thumb": "/images/thumb5.jpg"
+			},
+			{
+				"id": 6,
+				"full": "/images/portfolio_img1.jpg",
+				"thumb": "/images/thumb6.jpg"
+			}
+		],
+		"texto_orcamento": "<h4>Solicite um orçamento e receba as melhores propostas de sacolas,<br>caixas e embalagens personalizadas!</h4>"
+	},
+	"quem_somos": {
+		"titulo_texto_sobre": "<h3>QUEM SOMOS</h3>",
+		"texto_sobre": "<p>Somos uma empresa que busca inovar o mercado oferecendo soluções personalizadas de acordo com a necessidade do cliente, criando produtos diferenciados com qualidade e que seja a cara do seu negócio.</p><p>Essa é a Premier, um empreendimento que conta com profissionais que atuam na área gráfica e embalagens personalizadas há 5 anos, sempre oferecendo qualidade em seus produtos e atendimento. Criatividade é apenas um dos ingredientes da nossa receita para o sucesso, pois para estar no mercado tão competitivo, precisa-se de mais.</p><p>Por isso, reunimos características fundamentais para consolidar nossa empresa, tais como: qualidade, pontualidade na entrega, preço competitivo ao do mercado e muita criatividade. Dessa forma, não oferecemos somente embalagens personalizadas, mas também a satisfação para nossos clientes.</p>",
+		"texto_solucoes_personalizadas": "<p>Oferecemos <span>soluções personalizadas</span> de acordo com a <span>necessidade</span> de cada cliente, criando <span>produtos</span> <span>diferenciados</span> com <span>qualidade e</span> que seja a <span>cara do seu negócio</span>.</p>"
+	},
+	"produtos": {
+		"titulo_texto_produtos": "<h3>O QUE FAZEMOS</h3>",
+		"produtos": [
+			{
+				"id": 1,
+				"titulo_produto": "<h4>SACOLAS</h4>",
+				"texto_produto": "<p>Produzimos diversos tipos de sacolas customizadas, com os mais variados tipos de acabamentos manual reforçado e, com o tipo de papel que melhor se encaixa com sua necessidade, com laminação: fosca, brilho, metalizada, enobrecimento em hot stamping, verniz UV localizado ou total, alto relevo, baixo relevo e relevo seco.</p><p class=\"bold\">Sacolas: Jóias e acessórios/ óticas/ Feiras e Eventos/ Vestuário/ Saúde e beleza/ Alimentício/ Calçados/ Decoração</p><p class=\"bold\">Tamanhos: PP/ P/ M/ G/ GG</p>",
+				"imagem": "/images/produtos-sacola.jpg"
+			},
+			{
+				"id": 2,
+				"titulo_produto": "<h4>CAIXAS</h4>",
+				"texto_produto": "<p>Nossas caixas possuem uma variedade de modelos e acabamentos, evidenciando qualidade e exclusividade para sua marca.</p><p class=\"bold\">Caixas: Jóias e acessórios/ óticas/ Feiras e Eventos/ Vestuário/ Alimentício/ Calçados/ Decoração</p><p class=\"bold\">Tamanhos: PP/ P/ M/ G/ GG</p>",
+				"imagem": "/images/produtos-caixa.jpg"
+			},
+			{
+				"id": 3,
+				"titulo_produto": "<h4>EMBALAGENS ALIMENTÍCIAS</h4>",
+				"texto_produto": "<p>Seu produto e sua marca merecem uma embalagem com modelagem exclusiva e qualidade acima da média. Nossas embalagens permitem personalização e acabamentos levando o conceito da sua marca até seu consumidor final.</p>",
+				"imagem": "/images/produtos-embalagens.jpg"
+			},
+			{
+				"id": 4,
+				"titulo_produto": "<h4>PERSONALIZE SUA EMBALAGEM</h4>",
+				"texto_produto": "<p>Escolha as cores, textura, acabamento e tamanho que melhor se enquadre nas suas necessidades e solicite um orçamento sem compromisso.</p>",
+				"imagem": "/images/produtos-monte.jpg"
+			}
+		]
+	},
+	"logistica": {
+		"titulo_texto_logistica": "<h3>LOGÍSTICA</h3>",
+		"texto_logistica": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aperiam aut blanditiis cum dignissimos enim fuga hic illo ipsa ipsum laborum necessitatibus nihil odit optio quibusdam, quisquam quos recusandae unde?</p><p>A accusantium consequatur earum error eveniet neque quidem quis recusandae similique? Assumenda consequatur reprehenderit tempora. Ad animi blanditiis, eum exercitationem fugit impedit, iusto nihil nulla odit quas quasi repudiandae veritatis!</p><p>A, asperiores aspernatur blanditiis commodi consequuntur, cumque dolore explicabo inventore non porro quo, soluta temporibus? Animi debitis dicta dolore et, facere illum inventore itaque iure, minus quis reprehenderit similique soluta?</p><p>Accusamus commodi corporis cum doloribus ex expedita illo, in incidunt laboriosam libero magni natus obcaecati quidem sint sit soluta tempore temporibus ullam veritatis voluptas. Accusamus aspernatur beatae cumque quae vero?</p><p>Commodi corporis cum distinctio dolorum nam nesciunt nihil reprehenderit repudiandae, sunt tenetur! Eius nihil quisquam quo. Ad architecto, corporis ducimus enim eos pariatur perspiciatis quaerat quidem, ratione tenetur vitae voluptas?</p><p>Ab accusantium deleniti ipsa nulla voluptate! A accusamus aperiam at commodi cum deserunt distinctio ex fuga impedit incidunt ipsa laboriosam minus nemo non numquam, placeat rem saepe vitae, voluptas voluptatibus.</p>"
+	},
+	"portfolio": {
+		"titulo_texto_portfolio": "<h3>PORTFÓLIO</h3>",
+		"texto_portfolio": "<p>Criatividade e qualidade fazem parte da nossa história, ao passar dos anos levamos esse conceito para cada um de nossos clientes. Confira abaixo alguns dos nossos trabalhos:</p>",
+		"imagens": [
+			{
+				"id": 1,
+				"imagem": "/images/portfolio_img1.jpg"
+			},
+			{
+				"id": 2,
+				"imagem": "/images/portfolio_img1.jpg"
+			},
+			{
+				"id": 3,
+				"imagem": "/images/portfolio_img1.jpg"
+			},
+			{
+				"id": 4,
+				"imagem": "/images/portfolio_img1.jpg"
+			},
+			{
+				"id": 5,
+				"imagem": "/images/portfolio_img1.jpg"
+			},
+			{
+				"id": 6,
+				"imagem": "/images/portfolio_img1.jpg"
+			}
+		]
+	},
+	"clientes": {
+		"titulo_texto_clientes": "<h3>CLIENTES</h3>",
+		"texto_clientes": "<p>Conheça alguns clientes atendidos pela Premier que acreditaram em nosso conceito e credibilidade:</p>",
+		"clientes": [
+			{
+				"id": 1,
+				"nome": "Cliente 1",
+				"url": "#",
+				"imagem": "/images/cliente1.jpg"
+			},
+			{
+				"id": 2,
+				"nome": "Cliente 2",
+				"url": "#",
+				"imagem": "/images/cliente1.jpg"
+			},
+			{
+				"id": 3,
+				"nome": "Cliente 3",
+				"url": "#",
+				"imagem": "/images/cliente1.jpg"
+			},
+			{
+				"id": 4,
+				"nome": "Cliente 4",
+				"url": "#",
+				"imagem": "/images/cliente1.jpg"
+			},
+			{
+				"id": 5,
+				"nome": "Cliente 5",
+				"url": "#",
+				"imagem": "/images/cliente1.jpg"
+			},
+			{
+				"id": 6,
+				"nome": "Cliente 6",
+				"url": "#",
+				"imagem": "/images/cliente1.jpg"
+			},
+			{
+				"id": 7,
+				"nome": "Cliente 7",
+				"url": "#",
+				"imagem": "/images/cliente1.jpg"
+			},
+			{
+				"id": 8,
+				"nome": "Cliente 8",
+				"url": "#",
+				"imagem": "/images/cliente1.jpg"
+			}
+		]
+	}
+}

@@ -1,0 +1,13 @@
+<section id="clientes">
+    <div class="container">
+        <div ng-bind-html="vm.clientes.titulo_texto_clientes"></div>
+        <div ng-bind-html="vm.clientes.texto_clientes"></div>
+        <div class="clientes">
+            <div class="col-md-3 col-sm-4 col-xs-6" ng-repeat="c in vm.clientes.clientes track by c.id">
+                <a ng-href="{{ ::c.url }}">
+                    <img ng-src="{{ ::c.imagem }}" class="img-responsive" title="{{ ::c.nome }}"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

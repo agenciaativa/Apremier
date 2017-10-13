@@ -1,0 +1,10 @@
+
+\.idea/
+
+public_html/\.tmp/
+
+public_html/bower_components/
+
+public_html/node_modules/
+
+public_html/package-lock\.json

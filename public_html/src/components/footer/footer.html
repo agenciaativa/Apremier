@@ -1,0 +1,43 @@
+<footer>
+    <div class="newsletter">
+        <div class="container">
+            <form role="form" name="news-form">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-lg-2 col-lg-offset-2">
+                        <p>Cadastre-se e receba nossa newsletter</p>
+                    </div>
+                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-0 news-col">
+                        <input type="text" id="email" name="email" class="form-control" placeholder="SEU EMAIL AQUI">
+                    </div>
+                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-lg-2 col-lg-offset-0 news-col">
+                        <button type="button" id="btn_register" class="btn btn-newsletter">CADASTRAR</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo" ng-if="config.logo_footer">
+            <a ui-sref="home">
+                <img ng-src="{{ ::config.logo_footer }}"/>
+            </a>
+        </div>
+        <div class="menu-contato">
+            <div class="contato-info">
+                <div class="telefone">
+                    <img src="/images/phone.png">
+                    <h5 ddd telefone="config.telefone"></h5>
+                    <h4 fone telefone="config.telefone"></h4>
+                </div>
+                <div class="social-links" ng-if="config.redes_sociais">
+                    <a ng-repeat="rs in config.redes_sociais track by rs.id" ng-href="{{ ::rs.link }}" class="{{ ::rs.nome }}" title="{{ ::rs.nome }}">
+                        <img ng-src="/images/{{ ::rs.nome }}.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h6>© COPYRIGHT 2017 APREMIER EMBALAGENS - TODOS OS DIREITOS RESERVADOS</h6>
+        </div>
+    </div>
+</footer>

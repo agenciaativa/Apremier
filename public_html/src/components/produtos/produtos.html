@@ -1,0 +1,19 @@
+<section id="produtos">
+    <div class="container">
+        <div ng-bind-html="vm.produtos.titulo_texto_produtos"></div>
+        <div class="row">
+            <div class="produto" ng-repeat="p in vm.produtos.produtos track by p.id">
+                <div class="col-md-8">
+                    <div ng-bind-html="p.titulo_produto"></div>
+                    <div ng-bind-html="p.texto_produto"></div>
+                </div>
+                <div class="col-md-4">
+                    <img ng-src="{{ ::p.imagem }}" class="img-responsive" ng-if="p.imagem">
+                </div>
+                <div class="col-md-12 visible-xs" ng-if="!$last">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

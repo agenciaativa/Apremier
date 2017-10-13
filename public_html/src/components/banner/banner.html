@@ -1,0 +1,5 @@
+<div uib-carousel class="slide" data-ride="carousel" active="0" interval="3000" no-wrap="false">
+    <div uib-slide ng-repeat="b in banners track by b.id" index="$index">
+        <img ng-src="{{ ::b.imagem }}" />
+    </div>
+</div>

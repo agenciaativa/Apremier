@@ -1,0 +1,18 @@
+<div id="portfolio-slider" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item" ng-class="{'active' : $index == 0}" ng-repeat="s in slides track by s.id">
+            <img ng-src="{{ ::s.full }}" />
+        </div>
+        <a class="left carousel-control" data-target="#portfolio-slider" data-slide="prev">
+            <img src="/images/arrow-left.png" alt="Prev">
+        </a>
+        <a class="right carousel-control" data-target="#portfolio-slider" data-slide="next">
+            <img src="/images/arrow-left.png" alt="Next">
+        </a>
+    </div>
+    <ol class="carousel-indicators">
+        <li class="col-md-2 col-xs-2" data-target="#portfolio-slider" data-slide-to="{{ $index }}" ng-class="{'active' : $index == 0 }" ng-repeat="s in slides track by s.id">
+            <img ng-src="{{ ::s.thumb }}">
+        </li>
+    </ol>
+</div>

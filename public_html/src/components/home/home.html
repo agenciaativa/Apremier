@@ -1,0 +1,30 @@
+<div tmpl-banner banners="vm.home.banners"></div>
+
+<section id="sobre" class="container">
+    <div ng-bind-html="vm.home.titulo_texto_sobre"></div>
+    <div ng-bind-html="vm.home.texto_sobre"></div>
+
+    <div class="row produtos">
+        <div class="col-sm-3 col-xs-12 produto" ng-repeat="p in vm.home.produtos track by p.id">
+            <a ng-href="{{ ::p.link}}">
+                <img ng-src="{{ ::p.imagem }}">
+            </a>
+        </div>
+    </div>
+
+    <div ng-bind-html="vm.home.titulo_texto_portfolio"></div>
+    <div ng-bind-html="vm.home.texto_portfolio"></div>
+</section>
+
+<section id="portfolio-home">
+    <div tmpl-portfolio-home slides="vm.home.portfolio"></div>
+</section>
+
+<section id="orcamento">
+    <div class="container">
+        <div ng-bind-html="vm.home.texto_orcamento"></div>
+        <div class="solicitar">
+            <a href="#" class="btn montar-embalagem">SOLICITAR ORÇAMENTO</a>
+        </div>
+    </div>
+</section>
