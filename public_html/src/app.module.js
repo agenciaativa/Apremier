@@ -13,6 +13,7 @@
         'app.home',
         'app.localizacao',
         'app.logistica',
+        'app.personalizar',
         'app.portfolio',
         'app.produtos',
         'app.sobre',

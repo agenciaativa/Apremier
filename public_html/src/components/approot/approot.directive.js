@@ -26,10 +26,10 @@
     }
 
     // ----- ControllerFunction -----
-    ControllerFunction.$inject = ['$document', 'logger', 'configService'];
+    ControllerFunction.$inject = ['logger', 'configService'];
 
     /* @ngInject */
-    function ControllerFunction($document, logger, configService) {
+    function ControllerFunction(logger, configService) {
         var vm = this;
         vm.config = null;
         vm.preloaded = null;
@@ -48,25 +48,6 @@
                 vm.config = data;
                 return vm.config;
             });
-        }
-
-        function formatToJson(obj) {
-            if (obj) {
-                var dq = '"';
-                var json = "{";
-                var last = Object.keys(obj).length;
-                var count = 0;
-                var x = null;
-                for (x in obj) {
-                    json += dq + x + dq + ":" + dq + obj[x] + dq;
-
-                    count++;
-                    if (count<last)
-                        json += ",";
-                }
-                json += "}";
-                return json;
-            }
         }
     }
 

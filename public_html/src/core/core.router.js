@@ -42,6 +42,10 @@
             .state('localizacao', {
                 url: '/localizacao',
                 template: '<div tmpl-localizacao></div>'
+            })
+            .state('personalizar', {
+                url: '/monte-seu-produto',
+                template: '<div tmpl-personalizar></div>'
             });
     }
 })();

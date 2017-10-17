@@ -1,0 +1,114 @@
+<section id="montar-produto">
+    <div class="container">
+        <h3>PERSONALIZE SUA EMBALAGEM</h3>
+
+        <p>
+            Escolha as cores, textura, acabamento e tamanho que melhor se enquadre nas suas necessidades e solicite um orçamento sem compromisso. Um de nossos consultores entrará em contato com você para informar o valor para este investimento que só trará mais brilho a sua marca.
+        </p>
+
+        <div id="opcoes-embalagem">
+            <h3>ESCOLHA SUA EMBALAGEM</h3>
+            <div class="row embalagens">
+                <div class="col-sm-4 item">
+                    <label for="sacola" class="item-imagem">
+                        <img src="/images/personalizar-sacola.jpg" class="img-responsive" />
+                    </label>
+                    <div class="item-selector">
+                        <input id="sacola" type="radio" name="tipo" ng-model="vm.checked" value="sacola" icheck />
+                        <label for="sacola">Personalize sua sacola</label>
+                    </div>
+                </div>
+                <div class="col-sm-4 item">
+                    <label for="caixa" class="item-imagem">
+                        <img src="/images/personalizar-caixa.jpg" class="img-responsive" />
+                    </label>
+                    <div class="item-selector">
+                        <input id="caixa" type="radio" name="tipo" ng-model="vm.checked" value="caixa" icheck />
+                        <label for="caixa">Personalize sua caixa</label>
+                    </div>
+                </div>
+                <div class="col-sm-4 item">
+                    <label for="embalagem" class="item-imagem">
+                        <img src="/images/personalizar-embalagem.jpg" class="img-responsive" />
+                    </label>
+                    <div class="item-selector">
+                        <input id="embalagem" type="radio" name="tipo" ng-model="vm.checked" value="embalagem" icheck />
+                        <label for="embalagem">Personalize sua embalagem</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="form-orcamento">
+            <form name="form-orcamento" ng-submit="enviaOrcamento()">
+                <h3>SUA {{ vm.checked | uppercase }} DO SEU JEITO</h3>
+                <p>
+                    Escolha tamanho, cores, textura e acabamento da sua {{ vm.checked }}, nos envie a solicitação de orçamento sem compromisso que em seguida uma de nossas consultoras entrará em contato com você
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Tamanho:</label>
+                            <input type="text" name="tamanho" id="tamanho" ng-model="vm.embalagem.tamanho" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label>Textura:</label>
+                            <input type="text" name="textura" id="textura" ng-model="vm.embalagem.textura" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label>Acabamento:</label>
+                            <input type="text" name="acabamento" id="acabamento" ng-model="vm.embalagem.acabamento" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Quantidade de cores:</label>
+                            <input type="number" min="1" prevent-typing-lower name="qtd_cores" id="qtd_cores" ng-model="vm.embalagem.qtd_cores" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label>Laminação e Plastificação:</label>
+                            <input type="text" name="laminacao" id="laminacao" ng-model="vm.embalagem.laminacao" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label>Anexe a logo da sua {{ vm.checked }}:</label>
+                            <div class="anexo">
+                                <label for="anexo" class="btn btn-default">Escolher Arquivo</label>
+                                <span class="sem-anexo" ng-if="!vm.embalagem.anexo">Nenhum arquivo selecionado</span>
+                                <span ng-if="vm.embalagem.anexo">{{ vm.embalagem.anexo.name }}</span>
+                                <input type="file" name="anexo" id="anexo" fileread="vm.embalagem.anexo" class="form-control" required/>
+                            </div>
+                        </div>
+                        <div class="extensoes form-group">
+                            <small>Extensões de arquivos permitidos para upload: <span>PNG, BMP, JPG, AI, CDR, PDF</span></small>
+                        </div>
+                        <div class="quantidade">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4">
+                                    <div class="text-center">
+                                        <label for="quantidade">QUANTIDADE</label>
+                                    </div>
+                                    <div class="input-group control">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button" ng-click="vm.sub()">
+                                                <i class="glyphicon glyphicon-minus"></i>
+                                            </button>
+                                        </span>
+                                        <input type="number" min="1" prevent-typing-lower name="quantidade" id="quantidade" class="form-control text-center" ng-model="vm.embalagem.quantidade" required />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button" ng-click="vm.add()">
+                                                <i class="glyphicon glyphicon-plus"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-md-8">
+                                    <a class="btn montar-embalagem">SOLICITAR ORÇAMENTO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

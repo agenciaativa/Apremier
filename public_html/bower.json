@@ -27,7 +27,8 @@
     "lodash": "^4.17.4",
     "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
-    "ngmap": "^1.18.4"
+    "ngmap": "^1.18.4",
+    "iCheck": "^1.0.2"
   },
   "resolutions": {
     "angular": "^1.6.6",
